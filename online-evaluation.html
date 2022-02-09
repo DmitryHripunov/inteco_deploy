@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="промо-сайт ломбарда «Чароит», скупка золотых колец в Пензе">
+
+  <link rel="preload" href="fonts/Ubuntu-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Light.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Ubuntu-Bold.woff" as="font" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ebbe0f87-4545-4d85-9f47-cff0cf4de2bf&lang=ru_RU"></script>
+
+  <title>Ломбард «Чароит»</title>
+<link href="/css/common.css" rel="stylesheet"></head>
+
+<body>
+  <div class="holder">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#!">
+            <picture>
+              <source media="(min-width: 1140px)"
+                srcset="/img/header-logo-desktop.png, /img/header-logo-desktop@2x.png 2x">
+              <img src="/img/header-logo.png"
+                srcset="/img/header-logo@2x.png 2x" width="207" height="32"
+                alt="Логоти ломбарда «Чароит»">
+            </picture>
+          </a>
+
+
+          <div class="header__menu menu">
+            <button class="menu__open btn-menu" type="button" aria-label="Открыть меню">
+              <span></span>
+            </button>
+
+
+            <div class="menu__container">
+              <a class="menu__link menu__link--address" href="#!" data-micromodal-open="modal-2">Адреса ломбардов</a>
+              <a class="menu__link menu__link--phone" href="tel:+7412258861">+7 (8412) 258-861</a>
+
+              <a class="menu__btn btn btn--small" href="#!" target="_self" data-micromodal-open="modal-1">Заказать
+                звонок</a>
+            </div>
+
+            <div class="menu__body">
+              <div class="menu__body-wrapper">
+                <div class="menu__body-container">
+                  <button class="menu__close btn-cross" aria-label="Закрыть меню"></button>
+                  <nav class="menu__nav">
+                    <ul class="menu__nav-list list-reset">
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#!">Украшения</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#!">Кольца</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#!">Цепочки</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#!">Изделия из бриллианта</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#!">Стоматологическое золото</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#!">Залог</a>
+                      </li>
+                    </ul>
+
+                    <ul class="menu__nav-sub-list list-reset">
+                      <li class="menu__nav-item menu__nav-item--current">
+                        <a class="menu__nav-link menu__nav-link--sub menu__nav-link--current" href="#!">Чароит</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">О нас</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Отзывы</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Акции</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Статьи</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Вопрос-ответ</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Сертификаты</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Информация</a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a class="menu__nav-link menu__nav-link--sub" href="#!">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <a class="menu__privacy" href="#!">Политика обработки персональных данных</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <main>
+      <h1 class="visually-hidden">Ломбард «Чароит» — скупка золотых колец в Пензе</h1>
+
+      <div class="hero-eval">
+        <img class="hero-eval__img" src="/img/hero-eval-bg.jpg" width="360" height="432"
+          alt="Золотые кольца">
+
+        <div class="hero-eval__wrapper">
+          <p class="hero-eval__text">
+            Оценим ваш товар за 5 минут
+          </p>
+
+          <!-- по клику открыйвается marquez -->
+          <a class="hero-eval__btn btn" href="#">Заполнить форму</a>
+        </div>
+      </div>
+
+      <div class="container container_bg_dark page-section">
+        <div class="wrapper">
+          <h2 class="container__title">Напишите нам в любой из мессенджеров</h2>
+
+          <div class="social">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="60" height="60">
+                <use xlink:href="#whatsup"></use>
+              </svg>
+            </a>
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="60" height="60">
+                <use xlink:href="#wiber"></use>
+              </svg>
+            </a>
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="60" height="60">
+                <use xlink:href="#telegramm"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- сюда добавить блок id-promo начиная с form -->
+      </div>
+
+      <div class="info-block page-section">
+        <div class="info-block__wrapper wrapper">
+          <div class="info-block__main">
+            <h2 class="info-block__title">Как это работает?</h2>
+
+            <ol class="info-block__ol">
+              <li class="info-block__ol-item">
+                <h3 class="info-block__heading">Сфотографируйте вещь</h3>
+
+                <p class="info-block__text">
+                  Сделайте несколько фотографий вещи которую хотите оценить.
+                </p>
+              </li>
+
+              <li class="info-block__ol-item">
+                <h3 class="info-block__heading">Заполните простую форму</h3>
+
+                <p class="info-block__text">
+                  Заполните простую форму.
+                </p>
+              </li>
+
+              <li class="info-block__ol-item">
+                <h3 class="info-block__heading">Дождитесь звонка оператора</h3>
+
+                <p class="info-block__text">
+                  Оператор свяжется с вами и назовет оценочную стоимость украшения.
+                </p>
+              </li>
+
+              <li class="info-block__ol-item">
+                <h3 class="info-block__heading">Приходите в выбранный филиал</h3>
+
+                <p class="info-block__text">
+                  Приходите в любой магазин сети Чароит.
+                </p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="info-block__second">
+            <div class="info-block__frame">
+              <div class="info-block__img" style="background: url('./iphone.png') center / cover no-repeat;"></div>
+              <video class="info-block__video js-video" loop autoplay playsinline muted>
+                <source src="./video.MP4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-section">
+        <div class="wrapper">
+          <h2 class="container__title container__title_red">Узнай стоимость своего изделия прямо сейчас!</h2>
+
+          <p class="container__desc">Оставь заявку и получи оценку</p>
+
+          <div class="eval">
+            <div class="eval__item">
+              <div class="eval__icon-wrapper">
+                <svg class="eval__icon" width="54" height="60">
+                  <use xlink:href="#icon-start"></use>
+                </svg>
+              </div>
+
+              <h3 class="eval__heading">Удобно</h3>
+
+              <p class="eval__text">Узнай стоимость изделия не выходя из дома</p>
+            </div>
+
+            <div class="eval__item">
+              <div class="eval__icon-wrapper">
+                <svg class="eval__icon" width="54" height="60">
+                  <use xlink:href="#icon-roket"></use>
+                </svg>
+              </div>
+
+              <h3 class="eval__heading">Быстро</h3>
+
+              <p class="eval__text">Онлайн оценка займет от 1 до 5 минут</p>
+            </div>
+
+            <div class="eval__item">
+              <div class="eval__icon-wrapper">
+                <svg class="eval__icon" width="54" height="60">
+                  <use xlink:href="#icon-gift"></use>
+                </svg>
+              </div>
+
+              <h3 class="eval__heading">Бесплатно</h3>
+
+              <p class="eval__text">Услуга абсолютно бесплатная</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-block page-section">
+        <div class="info-block__wrapper wrapper">
+          <div class="info-block__main">
+            <h2 class="info-block__title">Как это работает?</h2>
+
+            <p class="info-block__text info-block__text_indent">
+              Ломбард Qultura проводит оценку всех типов ювелирных украшений из драгоценных металлов, с бриллиантами,
+              изумрудами,
+              рубинами и т.д. Оцениваем изделия удаленно по фото, онлайн, с выездом на дом или в нашем офисе.
+            </p>
+
+            <img class="info-block__main-img" src="/img/hero-bg.jpg" alt="#">
+          </div>
+
+          <div class="info-block__second">
+            <h2 class="info-block__title info-block__title_hidden">Как это работает?</h2>
+
+            <p class="info-block__text info-block__text_indent">
+              Ломбард Qultura проводит оценку всех типов ювелирных украшений из драгоценных металлов, с бриллиантами,
+              изумрудами,
+              рубинами и т.д. Оцениваем изделия удаленно по фото, онлайн, с выездом на дом или в нашем офисе.
+            </p>
+
+            <h2 class="info-block__subtitle">Что влияет на стоимость?</h2>
+
+            <p class="info-block__text">Оценка качества и стоимость ювелирного украшения зависит от:</p>
+
+            <ul class="info-block__ul">
+              <li class="info-block__ul-item">
+                <h3 class="info-block__heading">Состояние</h3>
+
+                <p class="info-block__text">Драгоценности без трещин, сколов, царапин стоит дороже. Цена также зависит
+                  от пробы.</p>
+              </li>
+
+              <li class="info-block__ul-item">
+                <h3 class="info-block__heading">Наличие камней</h3>
+
+                <p class="info-block__text">Если изделие украшено бриллиантами, изумрудами, топазами и т.д., оцениваем
+                  их вид, огранку, качество вставки.</p>
+              </li>
+
+              <li class="info-block__ul-item">
+                <h3 class="info-block__heading">Дизайн и качество</h3>
+
+                <p class="info-block__text">Покупатели особенно ценят изделия ручной работы и покупают их по достойной
+                  цене.</p>
+              </li>
+
+              <li class="info-block__ul-item">
+                <h3 class="info-block__heading">Бренд и сертификат</h3>
+
+                <p class="info-block__text">Драгоценности с документами, в оригинальной коробке стоят дороже. Наличие
+                  сертификата соответствия гарантирует
+                  подлинность и качество изделия.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-section">
+        <div class="wrapper">
+          <div class="example">
+            <h2 class="example__title">Примеры оценки</h2>
+
+            <div class="example__container">
+              <div class="example__wrapper">
+                <div class="example__slide">
+                  <a href="#" class="example__link">
+                    <img class="example__img" src="/img/ex1.jpg" alt="#">
+                  </a>
+
+                  <div class="example__heading">Цепь, длина — 55 см</div>
+
+                  <div class="example__desc">Материал — золото, 585 пр.</div>
+
+                  <div class="example__desc">Общий вес — 44 г</div>
+
+                  <div class="example__desc">Чистый вес — 44 г</div>
+
+                  <div class="example__price">112 200 ₽</div>
+                </div>
+
+                <div class="example__slide">
+                  <a href="#" class="example__link">
+                    <img class="example__img" src="/img/ex2.jpg" alt="#">
+                  </a>
+
+                  <div class="example__heading">Часы мужские</div>
+
+                  <div class="example__desc">Материал — золото, 585 пр.</div>
+
+                  <div class="example__desc">Общий вес — 20 г</div>
+
+                  <div class="example__desc">Чистый вес — 20 г</div>
+
+                  <div class="example__price">51 000 ₽</div>
+                </div>
+
+                <div class="example__slide">
+                  <a href="#" class="example__link">
+                    <img class="example__img" src="/img/ex3.jpg" alt="#">
+                  </a>
+
+                  <div class="example__heading">Печатка.</div>
+
+                  <div class="example__desc">Материал — золото, 585 пр.</div>
+
+                  <div class="example__desc">Общий вес — 10,6 г</div>
+
+                  <div class="example__desc">Чистый вес — 10 г</div>
+
+                  <div class="example__price">25 500 ₽</div>
+                </div>
+
+                <div class="example__slide">
+                  <a href="#" class="example__link">
+                    <img class="example__img" src="/img/ex4.jpg" alt="#">
+                  </a>
+
+                  <div class="example__heading">Серьги</div>
+
+                  <div class="example__desc">Материал — золото, 585 пр.</div>
+
+                  <div class="example__desc">Общий вес — 6,8 г</div>
+
+                  <div class="example__desc">Чистый вес — 6,3 г</div>
+
+                  <div class="example__price">16 000 ₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer section">
+      <div class="wrapper">
+        <ul class="footer__nav-list list-reset">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">О нас</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Залог</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link footer__nav-link--arrow" href="#!">Сдать</a>
+
+            <ul class="footer__sub-nav-list list-reset card">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#!">Украшения</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#!">Кольца</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#!">Цепочки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#!">Изделия с бриллиантами</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#!">Стоматологическое золото</a>
+              </li>
+            </ul>
+
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Отзывы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Акции</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Статьи</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Вопрос-ответ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Сертификаты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Информация</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="footer__wrapper">
+          <a class="footer__link footer__link--phone" href="tel:+7412258861">+7 (8412) 258-861</a>
+          <a class="footer__link footer__link--address" href="#!" data-micromodal-open="modal-2">Адреса ломбардов</a>
+
+          <a class="footer__copyright" href="https://onlinebees.ru/" target="_blank" title="Веб-студия Onlinebees">
+            <svg class="footer__copyright-icon" width="126" height="24" viewBox="0 0 126 24">
+              <use xlink:href="#icon-onlinebees"></use>
+            </svg>
+          </a>
+
+          <a class="footer__logo" href="#!" target="_blank" title="на главную">
+            <picture>
+              <source media="(min-width: 1140px)"
+                srcset="/img/footer-logo-desktop.png, /img/footer-logo-desktop@2x.png 2x">
+              <img class="footer__logo-img" src="/img/footer-logo.png"
+                srcset="/img/footer-logo@2x.png 2x" width="208" height="32"
+                alt="Логоти ломбарда «Чароит»">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL FEEDBACK -->
+    <div class="modal modal--slide section" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container">
+          <button class="modal__close btn-cross" aria-label="Закрыть окно" data-micromodal-close></button>
+          <h2 class="modal__title section__title">Остались вопросы?</h2>
+          <p class="modal__text section__text">Оставьте заявку и мы вам перезвоним!</p>
+
+          <form class="modal__feedback-form feedback-form" action="#" method="POST" id="modal-from">
+            <div class="feedback-form__input-wrapper">
+              <input class="feedback-form__input" type="text" name="name" id="modal-name">
+              <label class="feedback-form__label" for="modal-name">Имя</label>
+            </div>
+            <div class="feedback-form__input-wrapper">
+              <input class="feedback-form__input" type="tel" name="phone" id="modal-phone">
+              <label class="feedback-form__label" for="modal-phone">Телефон</label>
+            </div>
+            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--message">
+              <textarea class="feedback-form__input feedback-form__input--message" name="message"
+                id="modal-message"></textarea>
+              <label class="feedback-form__label" for="modal-message">Сообщение</label>
+            </div>
+
+            <div class="feedback-form__privacy">
+              <input class="feedback-form__privacy-input visually-hidden" type="checkbox" name="privacy"
+                id="modal-privacy" checked>
+              <label class="feedback-form__privacy-label" for="modal-privacy"></label>
+
+              <p class="feedback-form__privacy-text">Отправляя форму, я соглашаюсь <br> на
+                <a class="feedback-form__privacy-link" href="#!">обработку персональных данных</a>
+              </p>
+            </div>
+
+            <button class="feedback-form__submit btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL FEEDBACK -->
+
+    <!-- MODAL MAPS -->
+    <div class="modal modal--slide modal--map section" id="modal-2" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container">
+          <button class="modal__close btn-cross" aria-label="Закрыть окно" data-micromodal-close></button>
+          <div class="map" id="map-slider">
+            <ul class="map__data">
+              <!-- 1 -->
+              <li class="map__item">
+                <div class="map__marker" data-x="53.198262" data-y="45.020301" data-value="marker-0"></div>
+                <div class="map__marker-data">
+                  <h3 class="map__marker-title">ул. Кирова, 70</h3>
+                  <p class="map__marker-opening">пн-сб: 9:15–19:15 <br> вс: 9:15–14:45</p>
+                  <a class="map__marker-phone" href="tel:+78412251345">тел: +7 (8412) 251-345</a>
+                </div>
+              </li>
+              <!-- 2 -->
+              <li class="map__item">
+                <div class="map__marker" data-x="53.198154" data-y="45.021379" data-value="marker-1"></div>
+                <div class="map__marker-data">
+                  <h3 class="map__marker-title">ул. Кирова, 73</h3>
+                  <p class="map__marker-opening">пн-сб: 9:15–18:45 <br> вс: 9:15–17:45</p>
+                  <a class="map__marker-phone" href="tel:+78412250542">тел: +7 (8412) 250-542</a>
+                </div>
+              </li>
+              <!-- 3 -->
+              <li class="map__item">
+                <div class="map__marker" data-x="53.196471" data-y="45.020463" data-value="marker-2"></div>
+                <div class="map__marker-data">
+                  <h3 class="map__marker-title">ул. Кирова, 69</h3>
+                  <p class="map__marker-opening">пн-сб: 9:00–18:45 <br> вс: 9:00–14:45</p>
+                  <a class="map__marker-phone" href="tel:+78412258861">тел: +7 (8412) 258-861</a>
+                </div>
+              </li>
+              <!-- 4 -->
+              <li class="map__item">
+                <div class="map__marker" data-x="53.22371" data-y="44.925062" data-value="marker-3"></div>
+                <div class="map__marker-data">
+                  <h3 class="map__marker-title">ул. пр-кт Строителей, 21а</h3>
+                  <p class="map__marker-opening">пн-сб: 9:00–18:30 <br> вс: 9:00–14:30</p>
+                  <a class="map__marker-phone" href="tel:+78412774867">тел: +7 (8412) 774-867</a>
+                </div>
+              </li>
+              <!-- 5 -->
+              <li class="map__item">
+                <div class="map__marker" data-x="53.205835" data-y="45.009423" data-value="marker-4"></div>
+                <div class="map__marker-data">
+                  <h3 class="map__marker-title">ул. Луначарского, 4</h3>
+                  <p class="map__marker-opening">пн-сб: 9:00–18:45 <br> вс: 9:00–15:45</p>
+                  <a class="map__marker-phone" href="tel:+78412492070">тел: +7 (8412) 492-070</a>
+                </div>
+              </li>
+              <!-- 6 -->
+              <li class="map__item">
+                <div class="map__marker" data-x="53.217187" data-y="44.981000" data-value="marker-5"></div>
+                <div class="map__marker-data">
+                  <h3 class="map__marker-title">ул. пр-кт Победы, 31</h3>
+                  <p class="map__marker-opening">пн-сб: 9:00–19:45 <br> вс: 9:00–14:45</p>
+                  <a class="map__marker-phone" href="tel:+78412517222">тел: +7 (8412) 517-222</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <!-- card 1 -->
+              <div class="slider__slide">
+                <div class="slider__card card js-map" data-value="address-0">
+                  <h3 class="slider__card-title card__title">ул. Кирова, 70</h3>
+                  <a class="slider__card-text card__text" href="tel:+78412251345">тел: +7 (8412) 251-345</a>
+                  <p class="slider__card-text card__text"><span>пн-сб: 9:15–19:15</span> <span>вс: 9:15–14:45</span>
+                  </p>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="slider__slide">
+                <div class="slider__card card js-map" data-value="address-1">
+                  <h3 class="slider__card-title card__title">ул. Кирова, 69</h3>
+                  <a class="slider__card-text card__text" href="tel:+78412258861">тел: +7 (8412) 258-861</a>
+                  <p class="slider__card-text card__text"><span>пн-сб: 9:00–18:45</span> <span>вс: 9:00–14:45</span>
+                  </p>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="slider__slide">
+                <div class="slider__card card js-map" data-value="address-2">
+                  <h3 class="slider__card-title card__title">ул. пр-кт Строителей, 21а</h3>
+                  <a class="slider__card-text card__text" href="tel:+78412774867">тел: +7 (8412) 774-867</a>
+                  <p class="slider__card-text card__text"><span>пн-сб: 9:00–18:30</span> <span>вс: 9:00–14:30</span>
+                  </p>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="slider__slide">
+                <div class="slider__card card js-map" data-value="address-3">
+                  <h3 class="slider__card-title card__title">ул. Кирова, 73</h3>
+                  <a class="slider__card-text card__text" href="tel:+78412250542">тел: +7 (8412) 250-542</a>
+                  <p class="slider__card-text card__text"><span>пн-сб: 9:15–18:45</span> <span>вс: 9:15–17:45</span>
+                  </p>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="slider__slide">
+                <div class="slider__card card js-map" data-value="address-4">
+                  <h3 class="slider__card-title card__title">ул. Луначарского, 4</h3>
+                  <a class="slider__card-text card__text" href="tel:+78412492070">тел: +7 (8412) 492-070</a>
+                  <p class="slider__card-text card__text"><span>пн-сб: 9:00–18:45</span> <span>вс: 9:00–15:45</span>
+                  </p>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="slider__slide">
+                <div class="slider__card card js-map" data-value="address-5">
+                  <h3 class="slider__card-title card__title">ул. пр-кт Победы, 31</h3>
+                  <a class="slider__card-text card__text" href="tel:+78412517222">тел: +7 (8412) 517-222</a>
+                  <p class="slider__card-text card__text"><span>пн-сб: 9:00–19:45</span> <span>вс: 9:00–14:45</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL MAPS -->
+  </div>
+<script type="text/javascript" src="/js/common.js"></script></body>
+
+</html>
